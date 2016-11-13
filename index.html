@@ -9,10 +9,21 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
+  <script>
+    // See http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/
+    (function(){
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect != location.href) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
+
   <!-- Hammer JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
 </head>
 <body>
   <cz-root>Loading...</cz-root>
-<script type="text/javascript" src="inline.js"></script><script type="text/javascript" src="styles.b6057a0da1345b3cd443.bundle.js"></script><script type="text/javascript" src="main.490e752735803a46a516.bundle.js"></script></body>
+<script type="text/javascript" src="inline.js"></script><script type="text/javascript" src="styles.b6057a0da1345b3cd443.bundle.js"></script><script type="text/javascript" src="main.a750ac2fb3f71b6ba6a8.bundle.js"></script></body>
 </html>
